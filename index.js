@@ -21,4 +21,6 @@ sequelize.sync().then( () => {
     App.listen( process.env.APP_PORT, () => {
         console.log( `App listening on port ${process.env.APP_PORT}!` );
     } );
-} );
+} ).catch( () => { } );
+
+module.exports = App;
