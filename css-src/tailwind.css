@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    @apply leading-normal;
+}
+
+body {
+    @apply bg-gray-50 font-sans;
+}
+
+.header {
+    @apply text-2xl uppercase m-0 rounded inline-block p-3 bg-gradient-to-r from-blue-100;
+}
+
+.section {
+    @apply border border-l-8 border-gray-200 bg-white m-4 p-3 rounded-md overflow-hidden;
+}
+
+.ta {
+    @apply appearance-none border border-gray-300 w-full py-1 px-2 bg-white text-gray-700 rounded-lg text-base;
+}

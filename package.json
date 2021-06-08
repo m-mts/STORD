@@ -1,0 +1,27 @@
+{
+  "name": "stord-url-shortener-exercise",
+  "version": "1.0.0",
+  "description": "STORD URL Shortener Exercise",
+  "main": "./index.js",
+  "scripts": {
+    "start": "node .",
+    "start-dev": "nodemon -r dotenv/config .",
+    "migrate": "node ./migrate-up.js",
+    "migrate-dev": "node -r dotenv/config ./migrate-up.js",
+    "build-css": "npx tailwindcss-cli@latest build css-src/tailwind.css -o static/css/styles.css",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^27.0.4",
+    "nodemon": "^2.0.7",
+    "sequelize-cli": "^6.2.0"
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.1",
+    "pg": "^8.6.0",
+    "sequelize": "^6.6.2"
+  },
+  "author": "Max Manets"
+}
